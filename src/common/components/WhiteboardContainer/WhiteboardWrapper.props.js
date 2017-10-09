@@ -8,8 +8,9 @@ const propTypes = {
     authorName: PropTypes.string.isRequired,
     color: PropTypes.string.isRequired,
   })),
-  onItemRemove: PropTypes.func.isRequired,
-  onItemUpdate: PropTypes.func.isRequired,
+  handleAdd: PropTypes.func.isRequired,
+  handleRemove: PropTypes.func.isRequired,
+  handleUpdate: PropTypes.func.isRequired,
 };
 
 export default propTypes;
