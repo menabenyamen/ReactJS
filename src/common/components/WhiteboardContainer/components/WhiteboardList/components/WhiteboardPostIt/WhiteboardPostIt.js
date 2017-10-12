@@ -31,7 +31,8 @@ const WhiteboardPostIt = (props) => {
       title.value,
       infoList.value,
       authorName.value,
-      color.value);
+      color.value,
+    );
     hideInput();
   };
 
@@ -42,24 +43,24 @@ const WhiteboardPostIt = (props) => {
       style={{ backgroundColor: props.color }}
     >
       <div className="WhiteboardPostIt">
-        <button
-          id="remove"
-          onClick={handleRemove}
-        >
+        <button id="remove" onClick={handleRemove}>
         X
         </button>
         <div className="title">
           <h1 className="title">{props.title}</h1>
         </div>
+
         <div className="info-list">
           <ul>
             <li>{props.infoList}</li>
           </ul>
         </div>
+
         <div className="author-name">
           <h5>{props.authorName}</h5>
         </div>
       </div>
+
       <button
         ref={(currentElement) => { editVisible = currentElement; }}
         id="edit"
